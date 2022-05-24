@@ -5,27 +5,24 @@
 int main()
 
 {
-  double Laenge; // --- Variable fuer Kommazahl
-  double Breite; // --- Variable fuer Kommazahl
-  double Umfang, Flaeche;
+  double lengh; // --- Variable for decimal
+  double scope, surface;
 
-  printf("Quatratberechnung (Umfang und Flaeche)");
+  printf("Square calculation (scope and surface)");
 
-  // --- Eingabe
-  printf("\nBitte Laenge eingeben [m]:");
-  scanf("%lf", & Laenge );
-  printf("Bitte Breite eingeben [m]");
+  // --- Inputs
+  printf("\nPlease enter lenght [m]:");
+  scanf("%lf", & lengh );
 
-  /* Verarbeitung */
-  // --- u=d * Breite
+  /* calculation */
+  scope = lengh * 4.0;
 
-  Umfang = Laenge * 4.0;
+  // --- power of a number
+  // https://www.programiz.com/c-programming/library-function/math.h/pow
+  surface =  pow(lengh, 2.0);
 
-  // --- A = Laeng * Breite
-  Flaeche =  pow(Laenge, 2.0);
-
-  // --- Ausgabe
-  printf("Der Umfang = %lf[m] die Flaeche = %lf[m^2]",Umfang,Flaeche);
+  // --- Outputs
+  printf("Circumference: %lf[m] Surface: %lf[m^2]",scope,surface);
 
   return 0;
 }
